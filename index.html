@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p id="count">0</p>
+    <div class="main header">
+      <button id="hamburg" onclick="displayMenu()"></button>
+      <img src="images/logo.svg">
+      <button id="cart" onclick="dispCart()"></button>
+      
+      <img id="profile" src="images/image-avatar.png" />
+    </div>
+    <div class="main carousle">
+      <div class="container">
+        <button id="left" onclick="prevImg()"></button>
+    
+        <div class="cart">
+          <p>Cart</p>
+          <p>Your cart is empty</p>
+        </div>
+        <div class="cartfill">
+          <p>Cart</p>
+          <div class="summary">
+            
+            <img id="thumb" src="images/image-product-1-thumbnail.jpg">
+            
+            <div class="pricing">
+            <p id="name"> Fall Limited Edition Sneakers
+            <p>$125.00 x <span id="quantiti">1</span> <span id="final"> = $375.00</span></p>
+            
+            </div>
+            <button id="delete" onclick="deleProd()"> </button> 
+          </div>
+          <button id="checkout">Checkout</button>
+        </div>
+
+        <button id="right" onclick="nextImg()"></button>
+      </div>
+    </div>
+    <div class="main description">
+      <h3>SNEAKERS COMPANY</h3>
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p>
+        These low profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they'll withstand everything the
+        weather can offer
+      </p>
+      <div id="pricing">
+        <p id="price">$<span>125.00 </span></p>
+        <p id="disc">50%</p>
+        <p id="original">$250.00</p>
+      </div>
+      <div class="quantity">
+        <button id="minus" onclick="minusQuant()"></button>
+        <p id="quant">0</p>
+        <button id="plus" onclick="addQuant()"></button>
+      </div>
+      <button id="addCart" onclick="addToCart()">
+        <span class="material-symbols-outlined"> shopping_cart </span
+        ><span> Add to cart </span>
+      </button>
+    </div>
+    <div class="sidebar">
+      <button id="close" onclick="closeMenu()">X</button>
+
+      <ul>
+        <p>Collection</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+      </ul>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
